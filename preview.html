@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ЕДИНСТВО — Studio UI Preview</title>
+<link rel="stylesheet" href="src/components/StudioShell.css" />
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; }
+.demo { margin: 0 auto; max-width: 1380px; padding: 43px clamp(20px,3.3vw,54px) 80px; color: #f3f3f2; background: #090a0b; font-family:Inter,Arial,sans-serif; }
+.demo-tag { font-size: 10px; color: #858789; letter-spacing: .19em; }
+h1 { font-size: clamp(38px,5vw,70px); line-height:1; letter-spacing:-.06em; margin:21px 0 12px; }
+p { color: #9b9d9e; font-size: 13px; line-height: 1.6; }
+.demo-work { display:grid;grid-template-columns:1.25fr .75fr;gap:13px;margin-top:38px; }
+.demo-card { border:1px solid #292b2d; border-radius:17px; background:#171819;padding:25px;min-height:252px;display:flex;flex-direction:column;justify-content:space-between; }
+.demo-card:nth-child(2) { background:#111213; }
+.demo-card h2 { font-size:27px;letter-spacing:-.05em;margin:11px 0; }
+.demo-row { display:flex;gap:9px;margin-top:26px; }
+.demo-row input { min-width:0; flex:1; padding:14px; background:#090a0b; color:#fff; border:1px solid #454749;border-radius:10px; }
+.demo-row button { border:0;background:#f3f3f2;color:#111;padding:0 19px;border-radius:10px;font-weight:bold; }
+.demo-icon { border:1px solid #555;width:37px;height:37px;display:grid;place-items:center;border-radius:10px;font-size:22px; }
+.demo-section-title { font-size:24px;margin:46px 0 18px; }
+.demo-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px; }
+.demo-project { display:flex;flex-direction:column; justify-content:space-between; height:162px;background:#111213;border:1px solid #303234;border-radius:14px;padding:19px; }
+.demo-project b { font-size:17px; }
+.demo-project span { font-size:10px;color:#929496; }
+.demo-project small { border:1px solid #454749;padding:6px;border-radius:6px;width:max-content;color:#999; }
+@media(max-width:960px) { .demo-grid { grid-template-columns:repeat(2,1fr); } }
+@media(max-width:740px) { .demo { padding:32px 16px; }.demo-work { grid-template-columns:1fr; }.demo-grid { grid-template-columns:1fr; }.demo-card { min-height:200px; }.demo-row {flex-direction:column}.demo-row input,.demo-row button {width:100%;height:49px; flex:auto;} }
+</style>
+</head>
+<body>
+<div class="edi-shell">
+  <div id="shade" class="edi-scrim"></div>
+  <aside id="sidebar" class="edi-sidebar">
+    <div class="edi-sidebar__header"><a class="edi-brand" href="#"><span class="edi-brand__symbol">Е</span><span class="edi-brand__wordmark"><strong>ЕДИНСТВО</strong><span>MEDIA STUDIO</span></span></a><button id="close" class="edi-sidebar__close" style="cursor:pointer">✕</button></div>
+    <div class="edi-sidebar__body"><p class="edi-sidebar__group">РАБОЧЕЕ ПРОСТРАНСТВО</p><nav class="edi-menu">
+      <a href="#" class="edi-menu__item edi-menu__item--active">⌂　Главная　　↗</a>
+      <a href="#" class="edi-menu__item">♫　Мои звуки</a>
+      <a href="#" class="edi-menu__item">▱　Эдиты</a>
+      <a href="#" class="edi-menu__item">▧　Контент</a>
+      <a href="#" class="edi-menu__item">▦　Шаблоны</a>
+      <a href="#" class="edi-menu__item">▸　Видеогенератор</a>
+    </nav></div>
+    <div class="edi-sidebar__footer"><a href="#" class="edi-menu__item">⚙　Настройки</a><div class="edi-sidebar__signature"><span class="edi-sidebar__signature-dot"></span> MADE FOR CREATORS <span>© 2026</span></div></div>
+  </aside>
+  <div class="edi-main">
+    <header class="edi-topbar"><div class="edi-topbar__left"><button id="toggle" class="edi-topbar__menu" style="cursor:pointer">☰</button><span class="edi-topbar__breadcrumb">STUDIO <span>/</span> ГЛАВНАЯ</span></div><div class="edi-topbar__right"><span class="edi-topbar__status"><span></span> ONLINE</span><span class="edi-topbar__edition">EDINSTVO / 01</span></div></header>
+    <main class="demo">
+      <div class="demo-tag">ЕДИНСТВО / ЦИФРОВАЯ СТУДИЯ / 2026</div>
+      <h1>Твоя студия.</h1>
+      <p>От первой идеи до готового релиза — всё в одном месте.</p>
+      <div class="demo-work">
+        <section class="demo-card"><div><div class="demo-tag">01 / НОВАЯ РАБОТА</div><h2>Создать проект</h2><p>Начни с названия. Остальное добавишь в редакторе.</p></div><div class="demo-row"><input placeholder="Название проекта" /><button>Создать ↗</button></div></section>
+        <section class="demo-card"><div class="demo-icon">↗</div><div><div class="demo-tag">02 / ПРОДОЛЖИТЬ</div><h2>Тестовый проект</h2><p>Караоке · 14 нояб. 2026</p></div></section>
+      </div>
+      <h2 class="demo-section-title">Мои проекты <span style="color:#777;font-weight:400;font-size:15px">03</span></h2>
+      <div class="demo-grid">
+        <div class="demo-project"><small>КАРАОКЕ</small><b>Тестовый проект</b><span>14 нояб. 2026　　ОТКРЫТЬ →</span></div>
+        <div class="demo-project"><small>ВИДЕО</small><b>Новый релиз</b><span>13 нояб. 2026　　ОТКРЫТЬ →</span></div>
+        <div class="demo-project"><small>ДИЗАЙН</small><b>Обложка сингла</b><span>12 нояб. 2026　　ОТКРЫТЬ →</span></div>
+      </div>
+    </main>
+  </div>
+</div>
+<script>
+const sidebar=document.getElementById('sidebar'),shade=document.getElementById('shade');
+function setOpen(state) { sidebar.classList.toggle('edi-sidebar--open',state);shade.classList.toggle('edi-scrim--show',state); }
+document.getElementById('toggle').onclick=()=>setOpen(!sidebar.classList.contains('edi-sidebar--open'));
+document.getElementById('close').onclick=()=>setOpen(false);
+shade.onclick=()=>setOpen(false);
+document.querySelectorAll('.edi-menu__item').forEach(el=>el.addEventListener('click',e=>e.preventDefault()));
+</script>
+</body>
+</html>

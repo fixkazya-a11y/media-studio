@@ -1,0 +1,24 @@
+/* EDINSTVO / MEDIA STUDIO — global layout reset. */
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  color-scheme: dark;
+  background: #090a0b;
+  color: #f3f3f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+html, body { width: 100%; min-width: 320px; min-height: 100%; margin: 0; padding: 0; }
+body { display: block !important; background: #090a0b; }
+#root {
+  width: 100%;
+  max-width: none !important;
+  min-height: 100dvh;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: left;
+}
+*, *::before, *::after { box-sizing: border-box; }
+button, input, textarea, select { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+/* Colours for navigation are scoped to StudioShell.css. */
